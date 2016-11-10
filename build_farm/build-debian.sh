@@ -19,7 +19,7 @@ function clone_or_pull () {
          git pull || exit 1
          popd
      else
-         git clone "$1" "$2" || exit 1
+         git clone -b proto1.2 "$1" "$2" || exit 1
      fi
 }
 
